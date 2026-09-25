@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 860" width="100%" height="100%">
+  <!-- Phone Body Outer Bezel (Minimalist Matte Black) -->
+  <rect x="5" y="5" width="410" height="850" rx="42" fill="#000000" stroke="#222225" stroke-width="3.5"/>
+  <rect x="14" y="14" width="392" height="832" rx="34" fill="#0D0E11"/>
+
+  <!-- Camera Punchhole -->
+  <circle cx="210" cy="32" r="5.5" fill="#000000" stroke="#18191E" stroke-width="1.5"/>
+
+  <!-- Status Bar -->
+  <text x="36" y="36" fill="#717684" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">09:41</text>
+  <path d="M362 28h18a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-18a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2z" fill="none" stroke="#717684" stroke-width="1.5"/>
+  <rect x="364" y="30" width="12" height="6" rx="1" fill="#CCFF00"/>
+
+  <!-- App Header / Swiss Typographic Style -->
+  <g transform="translate(26, 56)">
+    <text x="0" y="16" fill="#CCFF00" font-family="sans-serif" font-size="10" font-weight="900" letter-spacing="2">SWISS ATHLETIC // ACID VOLT</text>
+    <text x="0" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="26" font-weight="900" letter-spacing="-0.5">PLAN PASIKA</text>
+    
+    <rect x="270" y="24" width="98" height="24" rx="2" fill="#181A20" stroke="#282A33"/>
+    <text x="319" y="40" fill="#CCFF00" font-family="sans-serif" font-size="10" text-anchor="middle" font-weight="900">42:20 LIVE</text>
+  </g>
+
+  <!-- 7-Day Swiss Grid Strip -->
+  <g transform="translate(26, 126)">
+    <rect x="0" y="0" width="46" height="58" rx="4" fill="#14161B"/>
+    <text x="23" y="20" fill="#717684" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="700">MO</text>
+    <text x="23" y="42" fill="#FFFFFF" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="800">21</text>
+
+    <!-- Tue (Selected) -->
+    <rect x="53" y="0" width="46" height="58" rx="4" fill="#CCFF00"/>
+    <text x="76" y="20" fill="#000000" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="900">TU</text>
+    <text x="76" y="42" fill="#000000" font-family="sans-serif" font-size="16" text-anchor="middle" font-weight="900">22</text>
+
+    <rect x="106" y="0" width="46" height="58" rx="4" fill="#14161B"/>
+    <text x="129" y="20" fill="#717684" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="700">WE</text>
+    <text x="129" y="42" fill="#FFFFFF" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="800">23</text>
+
+    <rect x="159" y="0" width="46" height="58" rx="4" fill="#14161B"/>
+    <text x="182" y="20" fill="#717684" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="700">TH</text>
+    <text x="182" y="42" fill="#FFFFFF" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="800">24</text>
+
+    <rect x="212" y="0" width="46" height="58" rx="4" fill="#14161B"/>
+    <text x="235" y="20" fill="#717684" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="700">FR</text>
+    <text x="235" y="42" fill="#FFFFFF" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="800">25</text>
+
+    <rect x="265" y="0" width="46" height="58" rx="4" fill="#14161B"/>
+    <text x="288" y="20" fill="#717684" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="700">SA</text>
+    <text x="288" y="42" fill="#FFFFFF" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="800">26</text>
+
+    <rect x="318" y="0" width="46" height="58" rx="4" fill="#14161B"/>
+    <text x="341" y="20" fill="#717684" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="700">SU</text>
+    <text x="341" y="42" fill="#FFFFFF" font-family="sans-serif" font-size="15" text-anchor="middle" font-weight="800">27</text>
+  </g>
+
+  <!-- Rest Timer (Clean Bold Typographic) -->
+  <g transform="translate(26, 200)">
+    <rect x="0" y="0" width="368" height="96" rx="6" fill="#14161B" stroke="#252833" stroke-width="1"/>
+    <text x="18" y="26" fill="#717684" font-family="sans-serif" font-size="10" font-weight="800" letter-spacing="1">REST INTERVAL</text>
+    <text x="18" y="62" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="32" font-weight="900" letter-spacing="-1">01:14 <tspan fill="#717684" font-size="16">/ 01:30</tspan></text>
+    
+    <g transform="translate(210, 36)">
+      <rect x="0" y="0" width="42" height="26" rx="3" fill="#1E2028"/>
+      <text x="21" y="17" fill="#FFFFFF" font-family="sans-serif" font-size="10" text-anchor="middle" font-weight="700">60S</text>
+
+      <rect x="48" y="0" width="42" height="26" rx="3" fill="#CCFF00"/>
+      <text x="69" y="17" fill="#000000" font-family="sans-serif" font-size="10" text-anchor="middle" font-weight="900">90S</text>
+
+      <rect x="96" y="0" width="42" height="26" rx="3" fill="#1E2028"/>
+      <text x="117" y="17" fill="#FFFFFF" font-family="sans-serif" font-size="10" text-anchor="middle" font-weight="700">120S</text>
+    </g>
+
+    <rect x="18" y="76" width="332" height="4" fill="#20222B"/>
+    <rect x="18" y="76" width="260" height="4" fill="#CCFF00"/>
+  </g>
+
+  <!-- Giant Number Exercise Card -->
+  <g transform="translate(26, 312)">
+    <rect x="0" y="0" width="368" height="254" rx="6" fill="#14161B" stroke="#252833" stroke-width="1"/>
+    
+    <text x="18" y="28" fill="#717684" font-family="sans-serif" font-size="10" font-weight="800">EXERCISE 01</text>
+    <text x="18" y="56" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="20" font-weight="900">BENCH PRESS</text>
+    <text x="350" y="56" fill="#CCFF00" font-family="sans-serif" font-size="11" text-anchor="end" font-weight="900">CHEST</text>
+
+    <!-- Sets -->
+    <g transform="translate(16, 76)">
+      <!-- Set 1 -->
+      <rect x="0" y="0" width="336" height="46" rx="4" fill="#1B1E26"/>
+      <text x="14" y="28" fill="#717684" font-family="sans-serif" font-size="12" font-weight="900">01</text>
+      <text x="54" y="30" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="18" font-weight="900">80.0 <tspan font-size="12" fill="#717684">KG</tspan></text>
+      <text x="164" y="29" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="800">8 REPS</text>
+      <rect x="264" y="8" width="60" height="30" rx="3" fill="#242833"/>
+      <text x="294" y="27" fill="#CCFF00" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="900">DONE</text>
+
+      <!-- Set 2 -->
+      <g transform="translate(0, 54)">
+        <rect x="0" y="0" width="336" height="46" rx="4" fill="#1B1E26"/>
+        <text x="14" y="28" fill="#717684" font-family="sans-serif" font-size="12" font-weight="900">02</text>
+        <text x="54" y="30" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="18" font-weight="900">85.0 <tspan font-size="12" fill="#717684">KG</tspan></text>
+        <text x="164" y="29" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="800">8 REPS</text>
+        <rect x="264" y="8" width="60" height="30" rx="3" fill="#242833"/>
+        <text x="294" y="27" fill="#CCFF00" font-family="sans-serif" font-size="12" text-anchor="middle" font-weight="900">DONE</text>
+      </g>
+
+      <!-- Set 3 -->
+      <g transform="translate(0, 108)">
+        <rect x="0" y="0" width="336" height="46" rx="4" fill="#1B1E26" stroke="#CCFF00" stroke-width="1.5"/>
+        <text x="14" y="28" fill="#CCFF00" font-family="sans-serif" font-size="12" font-weight="900">03</text>
+        <text x="54" y="30" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="18" font-weight="900">90.0 <tspan font-size="12" fill="#717684">KG</tspan></text>
+        <text x="164" y="29" fill="#CCFF00" font-family="sans-serif" font-size="14" font-weight="900">6 TARGET</text>
+        <rect x="252" y="8" width="76" height="30" rx="3" fill="#CCFF00"/>
+        <text x="290" y="27" fill="#000000" font-family="sans-serif" font-size="11" text-anchor="middle" font-weight="900">CONFIRM</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Big Acid Action Button -->
+  <g transform="translate(26, 584)">
+    <rect x="0" y="0" width="368" height="54" rx="4" fill="#CCFF00"/>
+    <text x="184" y="33" fill="#000000" font-family="-apple-system, sans-serif" font-size="14" text-anchor="middle" font-weight="900" letter-spacing="1">LOG WORKOUT</text>
+  </g>
+
+  <!-- Swiss Bottom Nav -->
+  <g transform="translate(26, 756)">
+    <rect x="0" y="0" width="368" height="64" rx="4" fill="#14161B"/>
+    <text x="64" y="38" fill="#CCFF00" font-family="sans-serif" font-size="12" font-weight="900">PLANS</text>
+    <text x="150" y="38" fill="#717684" font-family="sans-serif" font-size="12" font-weight="700">SESSION</text>
+    <text x="236" y="38" fill="#717684" font-family="sans-serif" font-size="12" font-weight="700">DATA</text>
+    <text x="316" y="38" fill="#717684" font-family="sans-serif" font-size="12" font-weight="700">USER</text>
+  </g>
+</svg>

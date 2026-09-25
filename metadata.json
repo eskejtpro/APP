@@ -1,0 +1,6 @@
+{
+  "name": "PlanPasika.v1",
+  "description": "Natywna aplikacja fitness i planowania treningowego dla Xiaomi 14T w architekturze offline-first.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
