@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Settings, Download, Upload, Shield, X, Bell, Layout } from 'lucide-react';
+import { Settings, Download, Upload, Shield, X, Bell, Layout, Palette } from 'lucide-react';
 import { StorageService } from '../../utils/storage';
 
 interface BackupSettingsDialogProps {
@@ -8,6 +8,14 @@ interface BackupSettingsDialogProps {
   onOpenImport: () => void;
 }
 
+export const THEME_PRESETS = [
+  { id: 'emerald', name: 'Obsidian Emerald', hex: '#00E676', bg: '#0A0D14' },
+  { id: 'cyan', name: 'Cyber Cyan', hex: '#00F5D4', bg: '#070C14' },
+  { id: 'lime', name: 'Tactical Lime', hex: '#D4FF00', bg: '#0D1117' },
+  { id: 'gold', name: 'Monolith Gold', hex: '#F59E0B', bg: '#0B0B0E' },
+  { id: 'titanium', name: 'Pure Titanium', hex: '#E2E8F0', bg: '#09090B' }
+];
+
 export const BackupSettingsDialog: React.FC<BackupSettingsDialogProps> = ({
   isOpen,
   onClose,
@@ -15,6 +23,14 @@ export const BackupSettingsDialog: React.FC<BackupSettingsDialogProps> = ({
 }) => {
   const [startScreen, setStartScreen] = useState('TODAY');
   const [reminderDays] = useState(3);
+  const [selectedTheme, setSelectedTheme] = useState(() => {
+    return localStorage.getItem('planpasika_theme') || 'emerald';
+  });
+
+  const handleSelectTheme = (themeId: string) => {
+    setSelectedTheme(themeId);
+    localStorage.setItem('planpasika_theme', themeId);
+  };
 
   if (!isOpen) return null;
 
@@ -61,7 +77,42 @@ export const BackupSettingsDialog: React.FC<BackupSettingsDialogProps> = ({
           </button>
         </div>
 
-        {/* 1. Start Screen Selection */}
+        {/* 1. Motyw & Akcent Kolorystyczny */}
+        <div className="bg-[#212735] p-3 rounded-xl border border-[#2C3548] space-y-2">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-white">
+              <Palette className="w-3.5 h-3.5 text-[#00E676]" />
+              <span>Akcent kolorystyczny motywu:</span>
+            </div>
+            <span className="text-[10px] font-mono text-[#00E676] uppercase font-bold">
+              {THEME_PRESETS.find((t) => t.id === selectedTheme)?.name || 'Emerald'}
+            </span>
+          </div>
+          <div className="grid grid-cols-5 gap-1.5 pt-1">
+            {THEME_PRESETS.map((t) => (
+              <button
+                key={t.id}
+                onClick={() => handleSelectTheme(t.id)}
+                className={`py-2 px-1 rounded-lg flex flex-col items-center gap-1 transition-all border ${
+                  selectedTheme === t.id
+                    ? 'border-white bg-[#171B24] ring-1 ring-white'
+                    : 'border-[#2C3548] bg-[#171B24] hover:border-[#4B5563]'
+                }`}
+                title={t.name}
+              >
+                <span
+                  className="w-4 h-4 rounded-full shadow-sm"
+                  style={{ backgroundColor: t.hex }}
+                />
+                <span className="text-[8px] font-mono text-[#94A3B8] truncate max-w-[48px]">
+                  {t.id}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* 2. Start Screen Selection */}
         <div className="bg-[#212735] p-3 rounded-xl border border-[#2C3548] space-y-1.5">
           <div className="flex items-center gap-1.5 text-xs font-bold text-white">
             <Layout className="w-3.5 h-3.5 text-[#00E676]" />

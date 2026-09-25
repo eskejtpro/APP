@@ -28,10 +28,6 @@ import { MuscleGroupsSection } from './components/analytics/MuscleGroupsSection'
 import { RecordsAndSummarySection } from './components/analytics/RecordsAndSummarySection';
 import { CalendarProtocolModal } from './components/calendar/CalendarProtocolModal';
 import { RestTimerSection } from './components/workout/RestTimerSection';
-import { DesignSwitcherBanner, DesignProposalType } from './components/proposals/DesignSwitcherBanner';
-import { CyberChronoCockpitView } from './components/proposals/CyberChronoCockpitView';
-import { ObsidianMonolithView } from './components/proposals/ObsidianMonolithView';
-import { TacticalBentoView } from './components/proposals/TacticalBentoView';
 import {
   getTodayFormattedPolish,
   getCurrentWeekDays,
@@ -244,9 +240,6 @@ export const App: React.FC = () => {
   const [editingProtocol, setEditingProtocol] = useState<CalendarProtocolEntry | null>(null);
   const [deletingProtocolId, setDeletingProtocolId] = useState<string | null>(null);
 
-  // === DESIGN PROPOSALS SHOWCASE STATE ===
-  const [currentDesign, setCurrentDesign] = useState<DesignProposalType>('standard');
-
   // ==========================================
   // HANDLERS: TODAY ACTIONS
   // ==========================================
@@ -441,46 +434,10 @@ export const App: React.FC = () => {
     return protocolEntries.find((p) => p.id === deletingProtocolId);
   }, [protocolEntries, deletingProtocolId]);
 
-  if (currentDesign === 'cyber_chrono') {
-    return (
-      <div className="min-h-screen bg-[#07090E] flex flex-col items-center">
-        <div className="w-full max-w-md">
-          <DesignSwitcherBanner currentDesign={currentDesign} onSelectDesign={setCurrentDesign} />
-          <CyberChronoCockpitView onBackToStandard={() => setCurrentDesign('standard')} />
-        </div>
-      </div>
-    );
-  }
-
-  if (currentDesign === 'obsidian_monolith') {
-    return (
-      <div className="min-h-screen bg-[#000000] flex flex-col items-center">
-        <div className="w-full max-w-md">
-          <DesignSwitcherBanner currentDesign={currentDesign} onSelectDesign={setCurrentDesign} />
-          <ObsidianMonolithView onBackToStandard={() => setCurrentDesign('standard')} />
-        </div>
-      </div>
-    );
-  }
-
-  if (currentDesign === 'tactical_bento') {
-    return (
-      <div className="min-h-screen bg-[#0C0F17] flex flex-col items-center">
-        <div className="w-full max-w-md">
-          <DesignSwitcherBanner currentDesign={currentDesign} onSelectDesign={setCurrentDesign} />
-          <TacticalBentoView onBackToStandard={() => setCurrentDesign('standard')} />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-[#07090D] text-[#F8FAFC] flex justify-center selection:bg-[#00E676] selection:text-black">
       {/* Mobile container simulating Xiaomi 14T frame in Obsidian Dark aesthetic */}
       <div className="w-full max-w-md min-h-screen bg-[#0A0D14] flex flex-col relative shadow-2xl border-x border-[#222B3D]">
-        {/* Top Interactive Design Switcher */}
-        <DesignSwitcherBanner currentDesign={currentDesign} onSelectDesign={setCurrentDesign} />
-
         {/* Top App Bar */}
         <M3TopAppBar
           proposalLabel="PlanPasika"
